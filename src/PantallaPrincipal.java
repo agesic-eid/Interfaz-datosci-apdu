@@ -23,7 +23,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -63,34 +63,34 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         tFechaVenc.setFont(new java.awt.Font("Gotham", 0, 11)); // NOI18N
         jPanel1.add(tFechaVenc);
-        tFechaVenc.setBounds(280, 208, 220, 20);
+        tFechaVenc.setBounds(260, 240, 250, 30);
 
         tFechaEm.setFont(new java.awt.Font("Gotham", 0, 11)); // NOI18N
         jPanel1.add(tFechaEm);
-        tFechaEm.setBounds(10, 210, 220, 20);
+        tFechaEm.setBounds(10, 240, 230, 30);
 
         lFechaEm.setFont(new java.awt.Font("Gotham", 0, 14)); // NOI18N
         lFechaEm.setText("Fecha de Emisión");
         jPanel1.add(lFechaEm);
-        lFechaEm.setBounds(10, 190, 120, 14);
+        lFechaEm.setBounds(10, 220, 120, 14);
 
         tCedula.setFont(new java.awt.Font("Gotham", 0, 11)); // NOI18N
         jPanel1.add(tCedula);
-        tCedula.setBounds(10, 110, 500, 20);
+        tCedula.setBounds(10, 120, 500, 30);
 
         lFechaVenc.setFont(new java.awt.Font("Gotham", 0, 14)); // NOI18N
         lFechaVenc.setText("Fecha de Vencimiento");
         jPanel1.add(lFechaVenc);
-        lFechaVenc.setBounds(280, 190, 152, 14);
+        lFechaVenc.setBounds(260, 220, 152, 14);
 
         tNombre.setFont(new java.awt.Font("Gotham", 0, 11)); // NOI18N
         jPanel1.add(tNombre);
-        tNombre.setBounds(10, 70, 500, 20);
+        tNombre.setBounds(10, 60, 500, 30);
 
         lUnidadCert.setFont(new java.awt.Font("Gotham", 0, 14)); // NOI18N
         lUnidadCert.setText("Unidad Certificadora");
         jPanel1.add(lUnidadCert);
-        lUnidadCert.setBounds(10, 140, 139, 14);
+        lUnidadCert.setBounds(10, 160, 139, 14);
 
         ObtenerDatos.setFont(new java.awt.Font("Gotham", 0, 14)); // NOI18N
         ObtenerDatos.setText("Obtener Datos");
@@ -104,26 +104,26 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         tNumSer.setFont(new java.awt.Font("Gotham", 0, 11)); // NOI18N
         jPanel1.add(tNumSer);
-        tNumSer.setBounds(10, 260, 500, 18);
+        tNumSer.setBounds(10, 300, 500, 30);
 
         lCedula.setFont(new java.awt.Font("Gotham", 0, 14)); // NOI18N
         lCedula.setText("Cédula");
         jPanel1.add(lCedula);
-        lCedula.setBounds(10, 90, 47, 14);
+        lCedula.setBounds(10, 100, 47, 14);
 
         lNumSerial.setFont(new java.awt.Font("Gotham", 0, 14)); // NOI18N
         lNumSerial.setText("Número Serial");
         jPanel1.add(lNumSerial);
-        lNumSerial.setBounds(10, 240, 95, 14);
+        lNumSerial.setBounds(10, 280, 95, 14);
 
         lNombre.setFont(new java.awt.Font("Gotham", 0, 14)); // NOI18N
         lNombre.setText("Nombre Completo");
         jPanel1.add(lNombre);
-        lNombre.setBounds(10, 50, 125, 14);
+        lNombre.setBounds(10, 40, 125, 14);
 
         tUnidadCert.setFont(new java.awt.Font("Gotham", 0, 11)); // NOI18N
         jPanel1.add(tUnidadCert);
-        tUnidadCert.setBounds(10, 160, 500, 20);
+        tUnidadCert.setBounds(10, 180, 500, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/esquina_1.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -146,9 +146,9 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void ObtenerDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ObtenerDatosActionPerformed
+    private void ObtenerDatosActionPerformed(java.awt.event.ActionEvent evt) {                                             
         String[] r = sc.leer();
         String[] n = r[4].split(",");
         tNombre.setText(n[0].substring(3));
@@ -176,7 +176,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         } catch (IOException e) {System.out.println("No se encontro la imagen");}
         img2.setIcon(new ImageIcon( img ));
         
-    }//GEN-LAST:event_ObtenerDatosActionPerformed
+    }                                            
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -210,7 +210,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton ObtenerDatos;
     private javax.swing.JLabel img2;
     private javax.swing.JLabel jLabel1;
@@ -230,5 +230,5 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField tNombre;
     private javax.swing.JTextField tNumSer;
     private javax.swing.JTextField tUnidadCert;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
