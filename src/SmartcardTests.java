@@ -371,5 +371,4 @@ public class SmartcardTests {
         return resultado;
     }
 
-
 }
