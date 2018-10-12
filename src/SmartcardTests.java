@@ -47,14 +47,10 @@ public class SmartcardTests {
     public String[] leer(){
         try {
             return readCard();
-        } catch (IOException ex) {
-            Logger.getLogger(SmartcardTests.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (CertificateException | InvalidKeyException | NoSuchAlgorithmException | SignatureException | NoSuchPaddingException | IllegalBlockSizeException | BadPaddingException | NoSuchProviderException ex) {
-            Logger.getLogger(SmartcardTests.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (Exception ex) {
-            Logger.getLogger(SmartcardTests.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return new String[6];
+        } catch (Exception e) {
+            Logger.getLogger(SmartcardTests.class.getName()).log(Level.SEVERE, null, e);
+            return new String[6];
+        }     
     }
     
     private String[] readCard() throws CardException, IOException, CertificateException, InvalidKeyException, NoSuchAlgorithmException, SignatureException, NoSuchPaddingException, IllegalBlockSizeException, BadPaddingException, NoSuchProviderException, Exception {
